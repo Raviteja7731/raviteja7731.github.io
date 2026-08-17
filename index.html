@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravi Teja Cherupally | Portfolio</title>
+<meta name="description" content="Ravi Teja Cherupally - Computer Science and Engineering graduate focused on Software Development, AI/ML and Data Analytics.">
+<style>
+:root{
+  --bg:#0b1020;
+  --card:#121a2f;
+  --card2:#17213a;
+  --text:#eef2ff;
+  --muted:#aeb8d0;
+  --accent:#7c8cff;
+  --accent2:#54d6c7;
+  --border:rgba(255,255,255,.10);
+  --max:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:linear-gradient(180deg,#090e1b 0%,#0d1426 100%);
+  color:var(--text);line-height:1.6;
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(92%,var(--max));margin:auto}
+nav{
+  position:sticky;top:0;z-index:20;
+  background:rgba(9,14,27,.88);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.3px}
+.logo span{color:var(--accent2)}
+.nav-links{display:flex;gap:24px;font-size:14px;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.hero{padding:100px 0 75px}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:55px;align-items:center}
+.badge{
+  display:inline-block;padding:7px 12px;border:1px solid var(--border);
+  border-radius:999px;background:rgba(124,140,255,.10);color:#cbd1ff;
+  font-size:13px;margin-bottom:18px;
+}
+h1{font-size:clamp(42px,7vw,72px);line-height:1.03;letter-spacing:-2px;margin-bottom:20px}
+.gradient{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:18px;color:var(--muted);max-width:700px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  padding:12px 18px;border-radius:10px;border:1px solid var(--border);
+  font-weight:700;font-size:14px;transition:.2s;display:inline-block;
+}
+.btn.primary{background:var(--accent);color:#080c18;border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+.profile-card{
+  background:linear-gradient(145deg,var(--card),var(--card2));
+  border:1px solid var(--border);border-radius:22px;padding:28px;
+  box-shadow:0 20px 70px rgba(0,0,0,.25);
+}
+.initials{
+  width:88px;height:88px;border-radius:20px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#08101d;font-size:30px;font-weight:900;margin-bottom:22px;
+}
+.profile-card h3{font-size:22px;margin-bottom:6px}
+.profile-card p{color:var(--muted);font-size:14px}
+.quick{margin-top:20px;display:grid;gap:10px}
+.quick div{padding:11px 12px;border:1px solid var(--border);border-radius:10px;color:var(--muted);font-size:13px}
+section{padding:78px 0}
+.section-title{font-size:32px;margin-bottom:10px}
+.section-sub{color:var(--muted);margin-bottom:30px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.card{
+  background:rgba(18,26,47,.72);border:1px solid var(--border);
+  border-radius:16px;padding:24px;
+}
+.card p{color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.skill{padding:8px 12px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.035);font-size:13px}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project h3{font-size:20px;margin-bottom:9px}
+.project p{font-size:14px;margin-bottom:15px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{font-size:11px;color:#cbd1ff;background:rgba(124,140,255,.10);padding:5px 8px;border-radius:7px}
+.timeline{display:grid;gap:16px}
+.timeline-item{border-left:2px solid var(--accent);padding:0 0 5px 20px}
+.timeline-item h3{font-size:18px}
+.timeline-item .meta{color:var(--accent2);font-size:13px;margin:3px 0 7px}
+.timeline-item p{color:var(--muted);font-size:14px}
+.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.cert h3{font-size:16px;margin-bottom:5px}
+.cert p{color:var(--muted);font-size:13px}
+.contact-box{
+  text-align:center;padding:45px 25px;border-radius:22px;
+  background:linear-gradient(145deg,rgba(124,140,255,.14),rgba(84,214,199,.08));
+  border:1px solid var(--border);
+}
+.contact-box p{color:var(--muted);margin:10px auto 20px;max-width:650px}
+footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:800px){
+  .hero-grid,.about,.projects,.certs{grid-template-columns:1fr}
+  .hero{padding-top:70px}
+  .nav-links{display:none}
+  h1{letter-spacing:-1px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#home">Ravi Teja<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">Computer Science & Engineering Graduate · 2025</div>
+        <h1>Hi, I'm <span class="gradient">Ravi Teja Cherupally</span>.</h1>
+        <p>
+          A Computer Science and Engineering graduate building practical solutions
+          across Software Development, Artificial Intelligence, Machine Learning,
+          Data Analytics and Cybersecurity.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View My Projects</a>
+          <a class="btn" href="https://www.linkedin.com/in/ravi-teja-cherupally-322a21349/" target="_blank">LinkedIn</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <div class="initials">RT</div>
+        <h3>Ravi Teja Cherupally</h3>
+        <p>Computer Science & Engineering</p>
+        <div class="quick">
+          <div>🎓 B.Tech — 70%</div>
+          <div>💻 Python · SQL · Power BI</div>
+          <div>🤖 AI · ML · Computer Vision</div>
+          <div>📍 Hyderabad, India</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-sub">A concise overview of my background and areas of interest.</p>
+      <div class="about">
+        <div class="card">
+          <p>
+            I am a B.Tech graduate in Computer Science and Engineering with hands-on
+            project experience in machine learning, data analytics, computer vision,
+            cybersecurity and software development. I enjoy turning technical concepts
+            into practical, measurable solutions.
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            My current focus is on entry-level opportunities where I can contribute
+            using Python, SQL, Power BI, machine learning and AI while continuing to
+            strengthen my software engineering and analytical skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-sub">Core technologies and areas I work with.</p>
+      <div class="card">
+        <div class="skills">
+          <span class="skill">Python</span>
+          <span class="skill">SQL</span>
+          <span class="skill">Power BI</span>
+          <span class="skill">Pandas</span>
+          <span class="skill">Scikit-learn</span>
+          <span class="skill">TensorFlow</span>
+          <span class="skill">OpenCV</span>
+          <span class="skill">Flask</span>
+          <span class="skill">Git</span>
+          <span class="skill">Machine Learning</span>
+          <span class="skill">Deep Learning</span>
+          <span class="skill">Computer Vision</span>
+          <span class="skill">Data Analysis</span>
+          <span class="skill">Artificial Intelligence</span>
+          <span class="skill">Cybersecurity</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">Selected academic and practical projects.</p>
+      <div class="projects">
+
+        <article class="card project">
+          <h3>Recyclable Waste Classification</h3>
+          <p>
+            An AI/deep-learning project focused on classifying recyclable waste
+            using computer vision techniques and image-based classification.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Deep Learning</span>
+            <span class="tag">Computer Vision</span><span class="tag">OpenCV</span>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Ransomware Detection</h3>
+          <p>
+            A machine-learning project exploring ransomware detection from
+            processor and disk-usage patterns to identify suspicious system activity.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Machine Learning</span>
+            <span class="tag">Cybersecurity</span><span class="tag">Data Analysis</span>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Phishing Website Detection</h3>
+          <p>
+            A machine-learning based approach for detecting potentially malicious
+            websites using relevant website characteristics and classification techniques.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Machine Learning</span>
+            <span class="tag">Scikit-learn</span><span class="tag">Cybersecurity</span>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Google Play Store Rating Prediction</h3>
+          <p>
+            A predictive analytics project using Play Store application data to
+            explore factors associated with app ratings and build a machine-learning model.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Pandas</span>
+            <span class="tag">EDA</span><span class="tag">Machine Learning</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience & Learning</h2>
+      <p class="section-sub">Programs and practical learning experiences.</p>
+      <div class="timeline">
+        <div class="card timeline-item">
+          <h3>AICTE Shell Skills4Future</h3>
+          <div class="meta">Internship / Skill Development</div>
+          <p>Practical exposure to emerging technology concepts and professional skills.</p>
+        </div>
+        <div class="card timeline-item">
+          <h3>IBM SkillsBuild</h3>
+          <div class="meta">Certifications & Learning</div>
+          <p>Completed learning paths covering AI, AI agents, data fundamentals and cybersecurity fundamentals.</p>
+        </div>
+        <div class="card timeline-item">
+          <h3>SAP Code Unnati / Edunet Foundation</h3>
+          <div class="meta">Emerging Technologies</div>
+          <p>Participated in technology-focused learning and innovation programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-sub">Selected certifications and programs.</p>
+      <div class="certs">
+        <div class="card cert"><h3>IBM SkillsBuild — AI Agent Architect</h3><p>Artificial Intelligence / AI Agents</p></div>
+        <div class="card cert"><h3>IBM SkillsBuild — AI Fundamentals</h3><p>Artificial Intelligence</p></div>
+        <div class="card cert"><h3>IBM SkillsBuild — Data Fundamentals</h3><p>Data and Analytics</p></div>
+        <div class="card cert"><h3>IBM SkillsBuild — Cybersecurity Fundamentals</h3><p>Cybersecurity</p></div>
+        <div class="card cert"><h3>Getting Started with AI</h3><p>IBM SkillsBuild learning credential</p></div>
+        <div class="card cert"><h3>Code Unnati Innovation Marathon</h3><p>Innovation / Emerging Technologies</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2 class="section-title">Let's Connect</h2>
+        <p>
+          I'm open to entry-level opportunities in Software Development,
+          Data Analytics, Artificial Intelligence and Machine Learning.
+        </p>
+        <div class="buttons" style="justify-content:center">
+          <a class="btn primary" href="https://www.linkedin.com/in/ravi-teja-cherupally-322a21349/" target="_blank">LinkedIn</a>
+          <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email Me</a>
+          <a class="btn" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub</a>
+        </div>
+        <p style="font-size:12px;margin-top:18px">
+          Replace the email and GitHub placeholder links with your actual details before publishing.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Ravi Teja Cherupally · Portfolio
+</footer>
+
+</body>
+</html>
